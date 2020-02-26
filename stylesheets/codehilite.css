@@ -5,7 +5,7 @@
 */
 
 .md-typeset code {
-    background-color: #424242;
+    background-color: #2e2e2e;
     color: #F5F5F5;
     margin: 0;
     padding: 0.07353em 0.29412em;
@@ -30,7 +30,7 @@
   code block background
   */
   .codehilite {
-    background-color: #424242 !important;
+    background-color: #2e2e2e !important;
   }
   
   /*
