@@ -36,7 +36,7 @@
     
     
       
-        <title>Drawing - Synapse X Documentation</title>
+        <title>Crypt - Synapse X Documentation</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#drawing-new" tabindex="0" class="md-skip">
+      <a href="#encrypt" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Drawing
+                Crypt
               
             </span>
           
@@ -381,11 +381,142 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../crypt/" title="Crypt" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Crypt
+      </label>
+    
+    <a href="./" title="Crypt" class="md-nav__link md-nav__link--active">
       Crypt
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encrypt" class="md-nav__link">
+    Encrypt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decrypt" class="md-nav__link">
+    Decrypt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base64-encode" class="md-nav__link">
+    Base64 Encode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base64-decode" class="md-nav__link">
+    Base64 Decode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash" class="md-nav__link">
+    Hash
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derive" class="md-nav__link">
+    Derive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random" class="md-nav__link">
+    Random
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom" class="md-nav__link">
+    Custom
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encrypt_1" class="md-nav__link">
+    Encrypt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decrypt_1" class="md-nav__link">
+    Decrypt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hash_1" class="md-nav__link">
+    Hash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryptiondecryption-ciphers" class="md-nav__link">
+    Encryption/Decryption ciphers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hashing-algorithms" class="md-nav__link">
+    Hashing algorithms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -405,114 +536,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Drawing
-      </label>
-    
-    <a href="./" title="Drawing" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../drawing/" title="Drawing" class="md-nav__link">
       Drawing
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#drawing-new" class="md-nav__link">
-    Drawing New
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fonts" class="md-nav__link">
-    Fonts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base-properties" class="md-nav__link">
-    Base Properties
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    Types:
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#line" class="md-nav__link">
-    Line
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    Text
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#circle" class="md-nav__link">
-    Circle
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#square" class="md-nav__link">
-    Square
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#triangle" class="md-nav__link">
-    Triangle
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -552,78 +580,106 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#drawing-new" class="md-nav__link">
-    Drawing New
+  <a href="#encrypt" class="md-nav__link">
+    Encrypt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fonts" class="md-nav__link">
-    Fonts
+  <a href="#decrypt" class="md-nav__link">
+    Decrypt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#base-properties" class="md-nav__link">
-    Base Properties
+  <a href="#base64-encode" class="md-nav__link">
+    Base64 Encode
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    Types:
+  <a href="#base64-decode" class="md-nav__link">
+    Base64 Decode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash" class="md-nav__link">
+    Hash
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derive" class="md-nav__link">
+    Derive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random" class="md-nav__link">
+    Random
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom" class="md-nav__link">
+    Custom
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#line" class="md-nav__link">
-    Line
+  <a href="#encrypt_1" class="md-nav__link">
+    Encrypt
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    Text
+  <a href="#decrypt_1" class="md-nav__link">
+    Decrypt
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#circle" class="md-nav__link">
-    Circle
+  <a href="#hash_1" class="md-nav__link">
+    Hash
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#square" class="md-nav__link">
-    Square
+  <a href="#encryptiondecryption-ciphers" class="md-nav__link">
+    Encryption/Decryption ciphers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#triangle" class="md-nav__link">
-    Triangle
+  <a href="#hashing-algorithms" class="md-nav__link">
+    Hashing algorithms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
   
 </li>
       
@@ -644,141 +700,163 @@
               
                 
                 
-              <h1>Drawing</h1>
-            
-            <h2 id="drawing-new">Drawing New</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">object</span><span class="o">&gt;</span> <span class="s2">Drawing</span><span class="p">.</span><span class="s2">new</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">type</span><span class="o">)</span>
+                  <h1>Crypt</h1>
+                
+                <h3 id="encrypt">Encrypt</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="s2">syn</span><span class="o">.</span><span class="s2">crypt</span><span class="o">.</span><span class="s2">encrypt</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">key</span><span class="o">)</span>  
 </code></pre></div>
 
 
-<p>Creates a new drawing object wiht <code>type</code>. Returns the object.</p>
-<h2 id="fonts">Fonts</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">table</span><span class="o">&gt;</span> <span class="s2">Drawing</span><span class="p">.</span><span class="s2">Fonts</span>
+<p>Encrypt's <code>data</code> with <code>key</code>.</p>
+<h3 id="decrypt">Decrypt</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">decrypt</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">key</span><span class="o">)</span>  
 </code></pre></div>
 
 
-<p>Returns a table populated with available fonts.</p>
+<p>Decrypt's <code>data</code> with <code>key</code>.</p>
+<h3 id="base64-encode">Base64 Encode</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">base64</span><span class="o">.</span><span class = "s2">encode</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">)</span>  
+</code></pre></div>
+
+
+<p>Encodes <code>data</code> with base64.</p>
+<h3 id="base64-decode">Base64 Decode</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">base64</span><span class="o">.</span><span class = "s2">decode</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">)</span>  
+</code></pre></div>
+
+
+<p>Decodes <code>data</code> with base64.</p>
+<h3 id="hash">Hash</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">hash</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">)</span>
+</code></pre></div>
+
+
+<p>Hashes <code>data</code>.</p>
+<h3 id="derive">Derive</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">derive</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">,&lt;</span><span class="kt">number</span><span class="o">&gt;)</span>
+</code></pre></div>
+
+
+<p>TODO: explanation</p>
+<h3 id="random">Random</h3>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">random</span><span class="o">(&lt;</span><span class="kt">number</span><span class="o">&gt;</span> <span class="n">size</span><span class="o">)</span>
+</code></pre></div>
+
+
+<p>Generates a random string with <code>size</code> (cannot be neagtive or exceed 1024).</p>
+<h2 id="custom">Custom</h2>
+<p><br></p>
+<h4 id="encrypt_1">Encrypt</h4>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">custom</span><span class="o">.</span><span class = "s2">encrypt</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">cipher</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">key</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">iv</span><span class="o">)</span>
+</code></pre></div>
+
+
+<p>Encrypt's <code>data</code> with <code>key</code> using selected <code>cipher</code> and <code>iv</code>(initialization vector).</p>
+<h4 id="decrypt_1">Decrypt</h4>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">custom</span><span class="o">.</span><span class = "s2">decrypt</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">cipher</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">key</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">iv</span><span class="o">)</span>
+</code></pre></div>
+
+
+<p>Decrypt's <code>data</code> with <code>key</code> using selected <code>cypher</code> and <code>iv</code>(initialization vector).</p>
+<h4 id="hash_1">Hash</h4>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class = "s2">syn</span><span class="o">.</span><span class = "s2">crypt</span><span class="o">.</span><span class = "s2">custom</span><span class="o">.</span><span class = "s2">hash</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">algorithm</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">data</span><span class="o">)</span>
+</code></pre></div>
+
+
+<p>Hashes <code>data</code> with <code>algorithm</code>.</p>
+<h3 id="encryptiondecryption-ciphers">Encryption/Decryption ciphers</h3>
+<p>You can use both <code>-</code> and <code>_</code>. With Blowfish <code>bf</code> or <code>blowfish</code>.</p>
 <table>
 <thead>
 <tr>
-<th><strong>Font</strong></th>
-<th><strong>Number</strong></th>
+<th><strong>AES</strong></th>
+<th><strong>Blowfish</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>UI</td>
-<td>0</td>
+<td>aes-cbc</td>
+<td>bf-cbc</td>
 </tr>
 <tr>
-<td>System</td>
-<td>1</td>
+<td>aes-cfb</td>
+<td>bf-cfb</td>
 </tr>
 <tr>
-<td>Plex</td>
-<td>2</td>
+<td>aes-ctr</td>
+<td>bf-ofb</td>
 </tr>
 <tr>
-<td>Monospace</td>
-<td>3</td>
+<td>aes-ofb</td>
+<td></td>
+</tr>
+<tr>
+<td>aes-gcm</td>
+<td></td>
+</tr>
+<tr>
+<td>aes-eax</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="base-properties">Base Properties</h2>
-<blockquote>
-<ul>
-<li>bool Visible</li>
-<li>void Remove</li>
-<li>Color3 Color</li>
-</ul>
-</blockquote>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Every class inherits functions and properties from this class.</p>
-</div>
-<h2 id="types">Types:</h2>
-<p><br></p>
-<h3 id="line">Line</h3>
-<blockquote>
-<ul>
-<li>number Transparency</li>
-<li>number Thickness</li>
-<li>Vector2 From</li>
-<li>Vector2 To</li>
-</ul>
-</blockquote>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Transparency here is opposite to roblox</p>
-</div>
-<h3 id="text">Text</h3>
-<blockquote>
-<ul>
-<li>string Text</li>
-<li>number Transparency</li>
-<li>number Size</li>
-<li>bool Center</li>
-<li>bool Outline</li>
-<li>Color3 OutlineColor</li>
-<li>Vector2 Position  </li>
-<li>Vector2 TextBounds [readonly]</li>
-<li>number Font</li>
-</ul>
-</blockquote>
-<h3 id="circle">Circle</h3>
-<blockquote>
-<ul>
-<li>number Transparency</li>
-<li>number Thickness</li>
-<li>number NumSides</li>
-<li>number Radius</li>
-<li>bool Filled</li>
-<li>Vector2 Position</li>
-</ul>
-</blockquote>
-<h3 id="square">Square</h3>
-<blockquote>
-<ul>
-<li>number Transparency</li>
-<li>number Thickness</li>
-<li>Vector2 Size</li>
-<li>Vector2 Position</li>
-<li>bool Filled</li>
-</ul>
-</blockquote>
-<h3 id="triangle">Triangle</h3>
-<blockquote>
-<ul>
-<li>number Transparency</li>
-<li>number Thickness</li>
-<li>Vector2 PointA</li>
-<li>Vector2 PointB</li>
-<li>Vector2 PointC</li>
-<li>bool Filled</li>
-</ul>
-</blockquote>
-<p><br></p>
-<h2 id="example">Example</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">local</span> <span class="n">line</span> <span class="o">=</span> <span class="n">Drawing</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Line&quot;</span><span class="p">)</span>
-<span class="n">line</span><span class="p">.</span><span class="n">Visible</span> <span class="o">=</span> <span class="kc">true</span>
-<span class="n">line</span><span class="p">.</span><span class="n">From</span> <span class="o">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">line</span><span class="p">.</span><span class="n">To</span> <span class="o">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">line</span><span class="p">.</span><span class="n">Color</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
-<span class="n">line</span><span class="p">.</span><span class="n">Thickness</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">line</span><span class="p">.</span><span class="n">Transparency</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">line</span><span class="p">:</span><span class="n">Remove</span><span class="p">()</span> <span class="c1">--Nothing will appear since its getting removed straight away.</span>
+<h3 id="hashing-algorithms">Hashing algorithms</h3>
+<p>Same goes here, you can use <code>-</code> or <code>_</code>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>MD5</strong></th>
+<th><strong>SHA1</strong></th>
+<th><strong>SHA2</strong></th>
+<th><strong>SHA3</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>md5</td>
+<td>sha1</td>
+<td>sha224</td>
+<td>sha3-256</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>sha256</td>
+<td>sha3-384</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>sha384</td>
+<td>sha3-512</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>sha512</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<p>Both do the same.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">syn</span><span class="p">.</span><span class="n">crypt</span><span class="p">.</span><span class="n">custom</span><span class="p">.</span><span class="n">encrypt</span><span class="p">(</span><span class="s2">&quot;bf-cbc&quot;</span><span class="p">,</span> <span class="s2">&quot;example-data&quot;</span><span class="p">,</span> <span class="s2">&quot;super-cool-key&quot;</span><span class="p">,</span> <span class="s2">&quot;FEA78B30A2611AB1&quot;</span><span class="p">)</span>
 </code></pre></div>
-            
+
+
+<div class="codehilite"><pre><span></span><code><span class="n">syn</span><span class="p">.</span><span class="n">crypt</span><span class="p">.</span><span class="n">custom</span><span class="p">.</span><span class="n">encrypt</span><span class="p">(</span><span class="s2">&quot;blowfish_cbc&quot;</span><span class="p">,</span> <span class="s2">&quot;example-data&quot;</span><span class="p">,</span> <span class="s2">&quot;super-cool-key&quot;</span><span class="p">,</span> <span class="s2">&quot;FEA78B30A2611AB1&quot;</span><span class="p">)</span>
+</code></pre></div>
+                
+                  
+                
+                
               
-            
-            
-          
-          
-            
+              
+                
 
 
-          
-        </article>
+              
+            </article>
           </div>
         </div>
       </main>
@@ -789,7 +867,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../debug/" title="Debug" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../bit/" title="Bit" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -798,19 +876,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Debug
+                Bit
               </span>
             </div>
           </a>
         
         
-          <a href="../syn/" title="Syn" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../debug/" title="Debug" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Syn
+                Debug
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
