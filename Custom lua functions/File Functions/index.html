@@ -632,80 +632,80 @@
               
                 
                 
-              <h1>File Functions</h1>
-            
-            <h2 id="read-file">Read File</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="s2">readfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>  
+                  <h1>File Functions</h1>
+                
+                <h2 id="read-file">Read File</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">readfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Reads the contents of the file located at <code>path</code> and returns it. If the file does not exist, it errors.</p>
 <h2 id="write-file">Write File</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s2">writefile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">filepath</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">contents</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">writefile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">filepath</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">contents</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Writes <code>contents</code> to the supplied <code>filepath</code>.</p>
 <p>Extensions that are not allowed: .exe, .scr, .bat, .com, .csh, .msi, .vb, .vbs, .vbe, .ws, .wsf, .wsh, .ps1, .psy.</p>
 <h2 id="append-file">Append File</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s2">appendfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">content</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">appendfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">content</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Appends <code>content</code> to the file contents at <code>path</code>. If the file does not exist, it errors.</p>
 <h2 id="load-file">Load File</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="s2">loadfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">loadfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Loads in the contents of a file as a chunk and returns it if compilation is successful. Otherwise, if an error has occured during compilation, nil followed by the error message will be returned.  </p>
 <h2 id="list-files">List Files</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s2">listfiles</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">folder</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">listfiles</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">folder</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Returns a table of files in <code>folder</code>.</p>
 <h2 id="is-file">Is File</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="s2">isfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">isfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Returns if <code>path</code> is a file or not.</p>
 <h2 id="is-folder">Is Folder</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="s2">isfolder</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">isfolder</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Returns if <code>path</code> is a folder or not.</p>
 <h2 id="make-folder">Make Folder</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s2">makefolder</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">filepath</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">makefolder</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">filepath</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Creates a new folder at <code>filepath</code>.</p>
 <h2 id="delete-folder">Delete Folder</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s2">delfolder</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">delfolder</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Deletes the folder in the supplied <code>path</code>, if no folder exist errors.</p>
 <h2 id="delete-file">Delete File</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s2">delfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">delfile</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">path</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Deletes the file in the supplied <code>path</code>, if no file exist errors.</p>
-            
+                
+                  
+                
+                
               
-            
-            
-          
-          
-            
+              
+                
 
 
-          
-        </article>
+              
+            </article>
           </div>
         </div>
       </main>

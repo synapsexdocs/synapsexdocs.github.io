@@ -747,19 +747,19 @@
                   <h1>Debug</h1>
                 
                 <h3 id="get-locals">Get Locals</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getlocals</span><span class="o">(&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">lvl</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getlocals</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">lvl</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns a table containing the upvalues at level <code>lvl</code>.  </p>
 <h3 id="get-local">Get Local</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getlocal</span><span class="o">(&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">lvl</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">localname</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getlocal</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">lvl</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">localname</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns the local with name <code>localname</code> in level <code>lvl</code>.  </p>
 <h3 id="set-local">Set Local</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setlocal</span><span class="o">(&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">lvl</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">localname</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setlocal</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">lvl</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">localname</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
 </code></pre></div>
 
 
@@ -769,95 +769,95 @@
 <p>debug.getlocals is not supported on Luau enabled games. Please use debug.getstack instead.</p>
 </div>
 <h3 id="get-constants">Get Constants</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="n">getconstants</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getconstants</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Retrieve the constants in function <code>fi</code> or at level <code>fi</code>.  </p>
 <h3 id="get-constant">Get Constant</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getconstant</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">idx</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getconstant</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">idx</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns the constant at index <code>idx</code> in function <code>fi</code> or level <code>fi</code>.  </p>
 <h3 id="set-constant">Set Constant</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setconstant</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">consname</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">,</span> <span class="kt">bool</span><span class="o">,</span> <span class="kt">nil</span><span class="o">,</span> <span class="kt">string</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setconstant</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">consname</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">,</span> <span class="kt">bool</span><span class="o">,</span> <span class="n">nil</span><span class="o">,</span> <span class="kt">string</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Set constant <code>consname</code> to tuple <code>value</code> at level or function <code>fi</code>.  </p>
 <p><br></p>
 <h3 id="get-upvalues">Get Upvalues</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getupvalues</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getupvalues</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Retrieve the upvalues in function <code>fi</code> or at level <code>fi</code>.  </p>
 <h3 id="get-upvalue">Get Upvalue</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getupvalue</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getupvalue</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Returns the upvalue with name <code>index</code> in function or level <code>fi</code>.  </p>
 <h3 id="set-upvalue">Set Upvalue</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setupvalue</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setupvalue</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Set upvalue <code>upvname</code> to value <code>value</code> at level or function <code>fi</code>.  </p>
 <p><br></p>
 <h3 id="get-protos">Get Protos</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getprotos</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getprotos</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Returns a table containing the protos (local functions) of function <code>f</code>.</p>
 <h3 id="get-proto">Get Proto</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getproto</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getproto</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Gets the proto (local function) at index index of function <code>f</code>.</p>
 <h3 id="set-proto">Set Proto</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setproto</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">,</span> <span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">replacement</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setproto</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">index</span><span class="o">,</span> <span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">replacement</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>replaces proto (local function) at <code>index</code> with function <code>replacement</code> at level or function <code>fi</code>.</p>
 <p><br></p>
 <h3 id="get-stack">Get Stack</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getstack</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getstack</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Gets the method stack at level or function <code>fi</code>.  </p>
 <h3 id="set-stack">Set Stack</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setstack</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span> <span class="n">indice</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setstack</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">number</span><span class="o">&gt;</span> <span class="n">indice</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">t</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>
 </code></pre></div>
 
 
 <p>Set the stack indice at <code>indice</code> to value <code>value</code> at level or function <code>fi</code>.</p>
 <p><br></p>
 <h3 id="set-metatable">Set Metatable</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setmetatable</span><span class="o">(&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="n">o</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="n">mt</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setmetatable</span><span class="o">(&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">o</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">mt</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Set the metatable of <code>o</code> to <code>mt</code>.  </p>
 <h3 id="get-registry">Get Registry</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">table</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">getregistry</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">getregistry</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns the lua registry.  </p>
 <h3 id="get-info">Get Info</h3>
-<div class="codehilite"><pre><span></span><code><span class="s">debug</span><span class="o">.</span><span class="s">getinfo</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">w</span> <span class="o">=</span> <span class="s">&quot;flnSu&quot;</span><span class="o">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="n">debug</span><span class="o">.</span><span class="n">getinfo</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">,</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">fi</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">w</span> <span class="o">=</span> <span class="s">&quot;flnSu&quot;</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns a table of info pertaining to the lua function <code>fi</code>.  </p>
 <h3 id="set-upvalue-name">Set Upvalue Name</h3>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="s">debug</span><span class="o">.</span><span class="s">setupvaluename</span><span class="o">(&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="n">Name</span><span class="o">)</span>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">debug</span><span class="o">.</span><span class="n">setupvaluename</span><span class="o">(&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">Name</span><span class="o">)</span>
 </code></pre></div>
 
 

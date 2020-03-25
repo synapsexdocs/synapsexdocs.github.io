@@ -448,26 +448,144 @@
                 
                   <h1>Misc. Functions</h1>
                 
-                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">setclipboard</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">value</span><span class="p">)</span>  
+                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">setclipboard</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Sets <code>value</code> to the clipboard.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">setnonreplicatedproperty</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Instance</span><span class="o">&gt;</span> <span class="nx">obj</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">prop</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="nx">value</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">setnonreplicatedproperty</span><span class="o">(&lt;</span><span class="n">Instance</span><span class="o">&gt;</span> <span class="kt">obj</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">prop</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Sets the <code>prop</code> property of <code>obj</code>, not replicating to the server. Useful for anticheat bypasses.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getspecialinfo</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Instance</span><span class="o">&gt;</span> <span class="nx">obj</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getspecialinfo</span><span class="o">(&lt;</span><span class="n">Instance</span><span class="o">&gt;</span> <span class="kt">obj</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Gets a list of special properties for <code>MeshParts</code>, <code>UnionOperations</code>, and <code>Terrain</code> instances.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">saveinstance</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">t</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">noscripts</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">mode</span> <span class="o">=</span> <span class="s2">&quot;optimized&quot;</span> <span class="p">})</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">saveinstance</span><span class="o">(&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">t</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Saves the Roblox game into your workspace folder.  You can use table <code>t</code> to customize options for this.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Option</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mode</td>
+<td>optimized / full / scripts</td>
+</tr>
+<tr>
+<td>noscripts</td>
+<td>true / false</td>
+</tr>
+<tr>
+<td>scriptcache</td>
+<td>true / false</td>
+</tr>
+<tr>
+<td>decomptype</td>
+<td>legacy / new</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>any number</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">messagebox</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">text</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">caption</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">style</span><span class="o">)</span>
+</code></pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Style</strong></th>
+<th><strong>Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OK</td>
+<td>0</td>
+</tr>
+<tr>
+<td>OK / Cancel</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Abort / Retry / Ignore</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Yes / No / Cancel</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Yes / No</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Retry / Cancel</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Cancel / Try Again / Continue</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Code</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The OK button was selected</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Cancel button was selected.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Abort button was selected.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Retry button was selected.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Ignore button was selected.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Yes button was selected.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>The No button was selected.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>The Try Again button was selected.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>The Continue button was selected.</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
