@@ -87,6 +87,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#loadstring" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -301,9 +305,64 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Reflection Functions
+      </label>
+    
     <a href="./" title="Reflection Functions" class="md-nav__link md-nav__link--active">
       Reflection Functions
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loadstring" class="md-nav__link">
+    Loadstring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-caller" class="md-nav__link">
+    Check Caller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-lua-closure" class="md-nav__link">
+    Is Lua Closure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dump-string" class="md-nav__link">
+    Dump String
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decompile" class="md-nav__link">
+    Decompile
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -440,6 +499,63 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loadstring" class="md-nav__link">
+    Loadstring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-caller" class="md-nav__link">
+    Check Caller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-lua-closure" class="md-nav__link">
+    Is Lua Closure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dump-string" class="md-nav__link">
+    Dump String
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decompile" class="md-nav__link">
+    Decompile
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -448,27 +564,32 @@
                 
                   <h1>Reflection Functions</h1>
                 
-                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">loadstring</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">chunk</span><span class="o">,</span> <span class="o">[&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">chunkname</span><span class="o">])</span>  
+                <h2 id="loadstring">Loadstring</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">loadstring</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">chunk</span><span class="o">,</span> <span class="o">[&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">chunkname</span><span class="o">])</span>  
 </code></pre></div>
 
 
 <p>Loads <code>chunk</code> as a lua function and returns it if compilation is succesful. Otherwise, if an error has occured during compilation, nil followed by the error message will be returned.  </p>
+<h2 id="check-caller">Check Caller</h2>
 <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">checkcaller</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns <code>true</code> if the current thread was made by Synapse. Useful for metatable hooks.  </p>
+<h2 id="is-lua-closure">Is Lua Closure</h2>
 <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">islclosure</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns true if <code>f</code> is an LClosure  </p>
+<h2 id="dump-string">Dump String</h2>
 <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">dumpstring</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">Script</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns the Roblox formatted bytecode for source string <code>Script</code>.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">decompile</span><span class="o">(&lt;</span><span class="n">LocalScript</span><span class="o">,</span> <span class="n">ModuleScript</span><span class="o">,</span> <span class="k">function</span><span class="o">&gt;</span> <span class="n">Script</span><span class="o">,</span> <span class="kt">bool</span> <span class="n">Bytecode</span> <span class="o">=</span> <span class="k">false</span><span class="o">)</span>  
+<h2 id="decompile">Decompile</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">decompile</span><span class="o">(&lt;</span><span class="n">userdata</span><span class="o">[</span><span class="n">LocalScript</span><span class="o">,</span> <span class="n">ModuleScript</span><span class="o">],</span> <span class="k">function</span><span class="o">,</span> <span class="kt">string</span><span class="o">,</span> <span class="n">proto</span><span class="o">&gt;</span>  <span class="n">Script</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="n">mode</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">timeout</span><span class="o">)</span>  
 </code></pre></div>
 
 

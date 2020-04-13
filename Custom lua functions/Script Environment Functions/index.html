@@ -87,6 +87,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#get-script-environment" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -313,9 +317,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Script Environment Functions
+      </label>
+    
     <a href="./" title="Script Environment Functions" class="md-nav__link md-nav__link--active">
       Script Environment Functions
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-script-environment" class="md-nav__link">
+    Get Script Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-calling-script" class="md-nav__link">
+    Get Calling Script
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -440,6 +478,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-script-environment" class="md-nav__link">
+    Get Script Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-calling-script" class="md-nav__link">
+    Get Calling Script
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -448,12 +522,14 @@
                 
                   <h1>Script Environment Functions</h1>
                 
-                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getsenv</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">LocalScript</span><span class="p">,</span> <span class="nx">ModuleScript</span><span class="o">&gt;</span> <span class="nx">Script</span><span class="p">)</span>  
+                <h2 id="get-script-environment">Get Script Environment</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getsenv</span><span class="o">(&lt;</span><span class="n">LocalScript</span><span class="o">,</span> <span class="n">ModuleScript</span><span class="o">&gt;</span> <span class="n">Script</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns the environment of <code>Script</code>. Returns nil if the script is not running.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">LocalScript</span><span class="p">,</span> <span class="nx">ModuleScript</span><span class="p">,</span> <span class="nx">nil</span><span class="o">&gt;</span> <span class="nx">getcallingscript</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-calling-script">Get Calling Script</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">LocalScript</span><span class="o">,</span> <span class="n">ModuleScript</span><span class="o">,</span> <span class="n">nil</span><span class="o">&gt;</span> <span class="n">getcallingscript</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 

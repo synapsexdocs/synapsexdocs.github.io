@@ -565,66 +565,66 @@
                   <h1>Keyboard ∕ Mouse Functions</h1>
                 
                 <h2 id="is-roblox-active">Is Roblox Active</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">bool</span><span class="o">&gt;</span> <span class="nx">isrbxactive</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">isrbxactive</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns if the Roblox window is in focus.  This must return true for any other mouse/keyboard function to work.</p>
 <h2 id="keyboard">Keyboard</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">keypress</span><span class="p">(</span><span class="o">&lt;</span><span class="kr">int</span><span class="o">&gt;</span> <span class="nx">keycode</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">keypress</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">keycode</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Simulates a key press for the specified <code>keycode</code>. For more information: <a href="https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes" target="_blank">https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes</a></p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">keyrelease</span><span class="p">(</span><span class="o">&lt;</span><span class="kr">int</span><span class="o">&gt;</span> <span class="nx">key</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">keyrelease</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">key</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Releases <code>key</code> on the keyboard. You can access the int key values on MSDN.  </p>
 <h2 id="left-click">Left Click</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mouse1click</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mouse1click</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Simulates a full left mouse button press.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mouse1press</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mouse1press</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Simulates a left mouse button press without releasing it.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mouse1release</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mouse1release</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Simulates a left mouse button release.  </p>
 <h2 id="right-click">Right click</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mouse2click</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mouse2click</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Simulates a full right mouse button press.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mouse2press</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mouse2press</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Clicks down on the right mouse button.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mouse2release</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mouse2release</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Simulates a right mouse button release.  </p>
 <h2 id="mouse-movement">Mouse Movement</h2>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mousescroll</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">signed</span> <span class="kr">int</span><span class="o">&gt;</span> <span class="nx">px</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mousescroll</span><span class="o">(&lt;</span><span class="n">signed</span> <span class="n">int</span><span class="o">&gt;</span> <span class="n">px</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Scrolls the mouse wheel virtually by <code>px</code> pixels.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mousemoverel</span><span class="p">(</span><span class="o">&lt;</span><span class="kr">int</span><span class="o">&gt;</span> <span class="nx">x</span><span class="p">,</span> <span class="o">&lt;</span><span class="kr">int</span><span class="o">&gt;</span> <span class="nx">y</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mousemoverel</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">y</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Moves the mouse cursor relatively to the current mouse position by coordinates <code>x</code> and <code>y</code>.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="nx">mousemoveabs</span><span class="p">(</span><span class="o">&lt;</span><span class="kr">int</span><span class="o">&gt;</span> <span class="nx">x</span><span class="p">,</span> <span class="o">&lt;</span><span class="kr">int</span><span class="o">&gt;</span> <span class="nx">y</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">mousemoveabs</span><span class="o">(&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="n">y</span><span class="o">)</span>  
 </code></pre></div>
 
 
