@@ -87,6 +87,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#hook-function" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -265,9 +269,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hooking Functions
+      </label>
+    
     <a href="./" title="Hooking Functions" class="md-nav__link md-nav__link--active">
       Hooking Functions
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hook-function" class="md-nav__link">
+    Hook Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-c-closure" class="md-nav__link">
+    New C Closure
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -440,6 +478,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hook-function" class="md-nav__link">
+    Hook Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-c-closure" class="md-nav__link">
+    New C Closure
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -448,12 +522,14 @@
                 
                   <h1>Hooking Functions</h1>
                 
-                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">hookfunction</span><span class="p">(</span><span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">old</span><span class="p">,</span> <span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">hook</span><span class="p">)</span>  
+                <h2 id="hook-function">Hook Function</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">hookfunction</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">old</span><span class="o">,</span> <span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">hook</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Hooks function 'old', replacing it with the function 'hook'. The old function is returned, you must use it to call the function further.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">newcclosure</span><span class="p">(</span><span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">f</span><span class="p">)</span>  
+<h2 id="new-c-closure">New C Closure</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">newcclosure</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span>  
 </code></pre></div>
 
 

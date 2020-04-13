@@ -87,6 +87,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#get-global-environment" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -241,9 +245,112 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Environment Helper Functions
+      </label>
+    
     <a href="./" title="Environment Helper Functions" class="md-nav__link md-nav__link--active">
       Environment Helper Functions
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-global-environment" class="md-nav__link">
+    Get Global Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-roblox-environment" class="md-nav__link">
+    Get Roblox Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-registry" class="md-nav__link">
+    Get Registry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-garbage-collection" class="md-nav__link">
+    Get Garbage Collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-instances" class="md-nav__link">
+    Get Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-nil-instances" class="md-nav__link">
+    Get Nil Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-scripts" class="md-nav__link">
+    Get Scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-loaded-modules" class="md-nav__link">
+    Get Loaded Modules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-connections" class="md-nav__link">
+    Get Connections
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fire-signal" class="md-nav__link">
+    Fire Signal
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -440,6 +547,111 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-global-environment" class="md-nav__link">
+    Get Global Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-roblox-environment" class="md-nav__link">
+    Get Roblox Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-registry" class="md-nav__link">
+    Get Registry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-garbage-collection" class="md-nav__link">
+    Get Garbage Collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-instances" class="md-nav__link">
+    Get Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-nil-instances" class="md-nav__link">
+    Get Nil Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-scripts" class="md-nav__link">
+    Get Scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-loaded-modules" class="md-nav__link">
+    Get Loaded Modules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-connections" class="md-nav__link">
+    Get Connections
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fire-signal" class="md-nav__link">
+    Fire Signal
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -448,51 +660,103 @@
                 
                   <h1>Environment Helper Functions</h1>
                 
-                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getgenv</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+                <h2 id="get-global-environment">Get Global Environment</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getgenv</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns the environment that will be applied to each script ran by Synapse.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getrenv</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-roblox-environment">Get Roblox Environment</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getrenv</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns the global Roblox environment for the LocalScript state.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getreg</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-registry">Get Registry</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getreg</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns the Lua registry.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getgc</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-garbage-collection">Get Garbage Collection</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getgc</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns a copy of the Lua GC list.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getinstances</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-instances">Get Instances</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getinstances</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns a list of all instances within the game.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getnilinstances</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-nil-instances">Get Nil Instances</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getnilinstances</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns a list of all instances parented to <code>nil</code> within the game.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getscripts</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-scripts">Get Scripts</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getscripts</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns a list of all scripts within the game.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getloadedmodules</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<h2 id="get-loaded-modules">Get Loaded Modules</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getloadedmodules</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns all ModuleScripts loaded in the game.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">table</span><span class="o">&gt;</span> <span class="nx">getconnections</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Signal</span><span class="o">&gt;</span> <span class="nx">obj</span><span class="p">)</span>  
+<h2 id="get-connections">Get Connections</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span> <span class="n">getconnections</span><span class="o">(&lt;</span><span class="n">RBXScriptSignal</span><span class="o">&gt;</span> <span class="kt">obj</span><span class="o">)</span>  
 </code></pre></div>
 
 
-<p>Gets a list of connections to the specified signal. You can then use <code>:Disable</code> and <code>:Enable</code> on the connections to disable/enable them.  </p>
+<p>Gets a list of connections to the specified signal. List of things you can do to a connection below.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Example</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><connection>.Function</td>
+<td>The function connected to the connection</td>
+</tr>
+<tr>
+<td><connection>.State</td>
+<td>The state of the connection</td>
+</tr>
+<tr>
+<td><connection>:Enable</td>
+<td>Enables the connection</td>
+</tr>
+<tr>
+<td><connection>:Disable</td>
+<td>Disables the connection</td>
+</tr>
+<tr>
+<td><connection>:Fire</td>
+<td>Fires the connection</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<div class="codehilite"><pre><span></span><code><span class="kr">for</span> <span class="n">i</span><span class="p">,</span><span class="n">connection</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">getconnections</span><span class="p">(</span><span class="n">workspace</span><span class="p">.</span><span class="n">ChildAdded</span><span class="p">))</span> <span class="kr">do</span>
+    <span class="n">connection</span><span class="p">:</span><span class="n">Disable</span><span class="p">()</span>
+<span class="kr">end</span>
+</code></pre></div>
+
+
+<h2 id="fire-signal">Fire Signal</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">firesignal</span><span class="o">(&lt;</span><span class="n">RBXScriptSignal</span><span class="o">&gt;</span> <span class="kt">obj</span><span class="o">)</span>
+</code></pre></div>
+
+
+<p>Fires all the connections connected to the signal <code>obj</code>.</p>
                 
                   
                 
