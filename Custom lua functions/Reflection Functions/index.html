@@ -448,27 +448,27 @@
                 
                   <h1>Reflection Functions</h1>
                 
-                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">loadstring</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">chunk</span><span class="p">,</span> <span class="p">[</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">chunkname</span><span class="p">])</span>  
+                <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">loadstring</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">chunk</span><span class="o">,</span> <span class="o">[&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">chunkname</span><span class="o">])</span>  
 </code></pre></div>
 
 
-<p>Loads <code>chunk</code> as a js function and returns it if compilation is succesful. Otherwise, if an error has occured during compilation, nil followed by the error message will be returned.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">bool</span><span class="o">&gt;</span> <span class="nx">checkcaller</span><span class="p">(</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span><span class="p">)</span>  
+<p>Loads <code>chunk</code> as a lua function and returns it if compilation is succesful. Otherwise, if an error has occured during compilation, nil followed by the error message will be returned.  </p>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">checkcaller</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>  
 </code></pre></div>
 
 
 <p>Returns <code>true</code> if the current thread was made by Synapse. Useful for metatable hooks.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">bool</span><span class="o">&gt;</span> <span class="nx">islclosure</span><span class="p">(</span><span class="o">&lt;</span><span class="kd">function</span><span class="o">&gt;</span> <span class="nx">f</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">islclosure</span><span class="o">(&lt;</span><span class="k">function</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns true if <code>f</code> is an LClosure  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">dumpstring</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">Script</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">dumpstring</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">Script</span><span class="o">)</span>  
 </code></pre></div>
 
 
 <p>Returns the Roblox formatted bytecode for source string <code>Script</code>.  </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span> <span class="nx">decompile</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">LocalScript</span><span class="p">,</span> <span class="nx">ModuleScript</span><span class="p">,</span> <span class="kd">function</span><span class="o">&gt;</span> <span class="nx">Script</span><span class="p">,</span> <span class="nx">bool</span> <span class="nx">Bytecode</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span>  
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">decompile</span><span class="o">(&lt;</span><span class="n">LocalScript</span><span class="o">,</span> <span class="n">ModuleScript</span><span class="o">,</span> <span class="k">function</span><span class="o">&gt;</span> <span class="n">Script</span><span class="o">,</span> <span class="kt">bool</span> <span class="n">Bytecode</span> <span class="o">=</span> <span class="k">false</span><span class="o">)</span>  
 </code></pre></div>
 
 
