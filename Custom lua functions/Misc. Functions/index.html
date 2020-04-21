@@ -275,6 +275,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Internal%20Functions/" title="Internal Functions" class="md-nav__link">
+      Internal Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Keyboard%20%E2%88%95%20Mouse%20Functions/" title="Keyboard ∕ Mouse Functions" class="md-nav__link">
       Keyboard ∕ Mouse Functions
     </a>
@@ -312,6 +324,27 @@
         <li class="md-nav__item">
   <a href="#set-clipboard" class="md-nav__link">
     Set Clipboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-namecall-method" class="md-nav__link">
+    Get Namecall Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-namecall-method" class="md-nav__link">
+    Set Namecall Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-luau" class="md-nav__link">
+    Is LuaU
   </a>
   
 </li>
@@ -511,6 +544,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#get-namecall-method" class="md-nav__link">
+    Get Namecall Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-namecall-method" class="md-nav__link">
+    Set Namecall Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-luau" class="md-nav__link">
+    Is LuaU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#set-nonreplicated-property" class="md-nav__link">
     Set Nonreplicated Property
   </a>
@@ -556,6 +610,28 @@
 
 
 <p>Sets <code>value</code> to the clipboard.  </p>
+<h2 id="get-namecall-method">Get Namecall Method</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">method</span><span class="o">&gt;</span> <span class="n">getnamecallmethod</span><span class="bp">()</span>
+</code></pre></div>
+
+
+<p>Returns the method if the function is called in an <code>__namecall</code> metatable hook.</p>
+<h2 id="set-namecall-method">Set Namecall Method</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;...&gt;</span> <span class="n">setnamecallmethod</span><span class="o">(&lt;</span><span class="kt">string</span><span class="o">&gt;)</span>
+</code></pre></div>
+
+
+<p>Cant be fucked rn to doc this.</p>
+<h2 id="is-luau">Is LuaU</h2>
+<div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">isluau</span><span class="o">(&lt;</span><span class="k">void</span><span class="o">&gt;)</span>
+</code></pre></div>
+
+
+<p>Returns true if the game is running LuaU.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Always returns true. You should just remove calls to this in your scripts, non-luau is never coming back.</p>
+</div>
 <h2 id="set-nonreplicated-property">Set Nonreplicated Property</h2>
 <div class="codehilite"><pre><span></span><code><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="n">setnonreplicatedproperty</span><span class="o">(&lt;</span><span class="n">Instance</span><span class="o">&gt;</span> <span class="kt">obj</span><span class="o">,</span> <span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span> <span class="n">prop</span><span class="o">,</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">value</span><span class="o">)</span>  
 </code></pre></div>
