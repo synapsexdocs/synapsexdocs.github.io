@@ -26,6 +26,10 @@ and background color
   tbody {
     background-color: rgba(255, 255, 255, 0.05) !important;
   }
+
+  .md-typeset table:not([class]) {
+    background: #1f1f1f;
+  }
   
   .md-typeset table:not([class]) th {
     background-color: rgba(255,255,255,0.11) !important;
