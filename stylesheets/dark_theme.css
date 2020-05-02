@@ -167,3 +167,11 @@ and background color
   body, input {
     font-weight: 300;
   }
+  /*
+    Inline tables
+  */
+
+  .md-typeset__scrollwrap {
+    display: inline-block;
+    margin-right: 1em;
+  }
