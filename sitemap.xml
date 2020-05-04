@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/credits/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/environment_helper_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/script_environment_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/table_modification_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/keyboard_mouse_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/hooking_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/reflection_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/console_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/file_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/internal_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/custom_lua_functions/misc_functions/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/libraries/bit/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/libraries/crypt/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/libraries/debug/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/libraries/drawing/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/libraries/syn/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/libraries/websocket/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-03</lastmod>
+     <loc>https://synapsexdocs.github.io/changelog/</loc>
+     <lastmod>2020-05-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
